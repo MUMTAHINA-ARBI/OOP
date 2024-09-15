@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="directorBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdrcs.director">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Projects">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#loadOnGoingProjectOnAction" text="On Going Projects Chart" />
+                  <Menu mnemonicParsing="false" onAction="#loadPreviousProjectOnAction" text="Previous Project">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Cyclone Preparedness Program" />
+                        <MenuItem mnemonicParsing="false" text="Flood Resilience Program" />
+                        <MenuItem mnemonicParsing="false" text="WASH Project" />
+                        <MenuItem mnemonicParsing="false" text="Health Care Project" />
+                        <MenuItem mnemonicParsing="false" text="Blood Program" />
+                        <MenuItem mnemonicParsing="false" text="Urban Empowerment Project" />
+                     </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reports">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Partnership Meeting Report" />
+                  <MenuItem mnemonicParsing="false" text="Monthly Operation Report" />
+                  <MenuItem mnemonicParsing="false" text="Employee Salary Report" />
+                  <MenuItem mnemonicParsing="false" text="Annual Report" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Meeting">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#LoadArrangeMeetingOnAction" text="Arrange Meeting" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadMeetingScheduleOnACtion" text="Meeting Schedule" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Training">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#loadDisasterManagementOnAction" text="Disaster Management" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadFireManagementOnAction" text="Fire Management" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadFirstAidOnAction" text="First Aid" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadSearchRescueOnAction" text="Search &amp; Rescue" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadRequestTrainingOnAction" text="Request for Training" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadTrainingOftrainerONAction" text="Training of Trainer" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Job Circular">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#loadCreatCircularOnAction" text="Creat Circular " />
+                  <MenuItem mnemonicParsing="false" onAction="#loadViewApplicantsOnAction" text="View Applicants" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Sponsor">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="FeedBack">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Label text="WelCome to Dashboard " BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="479.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdrcs.OnGoingProjectChart">
+   <children>
+      <BarChart fx:id="ongoingProjectBarChart" layoutX="29.0" prefHeight="315.0" prefWidth="547.0" title="Chart Of OnGoing Projects Progress">
+        <xAxis>
+          <CategoryAxis label="Year" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Progress" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <ComboBox fx:id="selectonGoingProjectComboBox" layoutX="29.0" layoutY="346.0" prefWidth="150.0" />
+      <TextField fx:id="yearTextField" layoutX="206.0" layoutY="346.0" />
+      <Button layoutX="422.0" layoutY="346.0" mnemonicParsing="false" onAction="#renderbuttonOnAction" text="Render Chart" />
+      <Label layoutX="29.0" layoutY="322.0" text="Select On Going Project:" />
+      <Label layoutX="206.0" layoutY="322.0" text="Select Year:" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdrcs.Meeting">
+   <children>
+      <ComboBox layoutX="39.0" layoutY="49.0" prefWidth="150.0" promptText="Meetings" />
+      <TextArea layoutX="39.0" layoutY="100.0" prefHeight="279.0" prefWidth="531.0" />
+   </children>
+</AnchorPane>
